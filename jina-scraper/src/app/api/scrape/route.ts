@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
-import { scrapeWithAxios } from '../../lib/scrapers/axiosScraper';
-import { scrapeWithCheerio } from '../../lib/scrapers/cheerioScraper';
-import { scrapeWithPuppeteer } from '../../lib/scrapers/puppeteerScraper';
+import { scrapeWithAxios } from '../../../lib/scrapers/axiosScraper';
+import { scrapeWithCheerio } from '../../../lib/scrapers/cheerioScraper';
+import { scrapeWithPuppeteer } from '../../../lib/scrapers/puppeteerScraper';
 
 export async function POST(request: Request) {
   const requestTimestamp = new Date().toISOString();

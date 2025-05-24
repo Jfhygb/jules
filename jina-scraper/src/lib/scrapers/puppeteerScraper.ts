@@ -1,6 +1,7 @@
 import puppeteer, { Browser } from 'puppeteer';
 import { cleanText } from '../utils';
 
+
 const MIN_CONTENT_LENGTH = 100; // Minimum characters to consider a successful scrape
 
 export async function scrapeWithPuppeteer(url: string): Promise<string> {
